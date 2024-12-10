@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       ul{
+           display: flex;
+           /* transition: width 4s; */
+         
+          
+        }
+        ul li{
+            list-style-type: none;
+            margin-right: 4px;
+            /* -webkit-transition:width 2s;
+           -o-transition:width 2s;
+           -moz-transition:width 2s; */
+          
+        }
+        li:hover .animat1{
+                  
+width: 20px;
+        }
+        /* li:hover .animat1{
+            animation-name: example; 
+            animation-duration: 3s;  
+             } */
+             @keyframes example{
+                from{width: 5px;}
+                to{width:20px}
+             }
+        .inlineUl a{
+            text-decoration: none;
+        }
+        .animat1{
+           
+            width: 0px;
+            height: 1px;
+            background-color: purple;
+            transition: all 2s ;    
+          /* display:inline-block;
+          position: relative;
+          left:-25px;
+          top:5px; */
+         
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul  class="inlineUl">
+            <li>
+                <a href="">test</a>
+                <div class="animat1"></div>
+            </li>
+            <li>
+                <a href="">test</a>
+                <div class="animat1"></div>
+            </li>
+           
+        </ul>
+    </div>
+</body>
+</html>
